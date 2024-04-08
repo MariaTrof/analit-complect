@@ -1,0 +1,36 @@
+@import "../../styles/global.scss";
+
+.container {
+  margin-top: 11px;
+  width: 230px;
+  background-color: var(--text-color-contract);
+  border: none;
+  border-radius: var(--border-radius);
+  height: 400px;
+}
+.box {
+  padding: 5px;
+}
+.list {
+  box-sizing: border-box;
+}
+.links {
+  font-family: var(--font-family);
+  font-weight: 100;
+  padding: 10px 20px;
+
+  justify-content: space-between;
+}
+.link {
+  color: var(--color-blank);
+
+  font-size: 18px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.link:hover {
+  color: var(--lime-color);
+  cursor: grab;
+  text-decoration: underline;
+}

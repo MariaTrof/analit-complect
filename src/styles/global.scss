@@ -1,0 +1,27 @@
+:root {
+  --font-family:"Raleway", sans-serif;
+  --font-size-xl: 48px;
+  --font-size-l: 32px;
+  --font-size-m: 24px;
+  --font-size-xs: 12px;
+
+  --color-main: rgba(233, 240, 242, 0.911);
+  --color-blank: white;
+  --text-color-main: rgb(13, 12, 12);
+  --text-color-contract: rgb(0, 74, 164);
+  --block-color: rgb(0, 166, 255);
+  --border-radius: 30px;
+  --blank-border: none;
+  --border: 2px solid;
+  --lime-color: rgb(161, 255, 231);
+
+  --font-weight-hard: 800;
+  --font-weight-medium: 500;
+  --font-weight-small: 100;
+
+  --background-gradient: linear-gradient(
+    90deg,
+    rgba(80, 223, 252, 1) 0%,
+    rgb(161, 255, 231)
+  );
+}
