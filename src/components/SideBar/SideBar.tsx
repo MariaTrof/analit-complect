@@ -1,5 +1,6 @@
 import { FC } from "react";
 import cls from './SideBar.module.scss';
+import { Link } from "react-router-dom";
 
 
 const SideBar: FC =  () => {
@@ -8,12 +9,12 @@ const SideBar: FC =  () => {
             <div className={cls.box}>
                 <div className={cls.list}>
                     <ul className={cls.links}>
-                        <a className={cls.link}>Контактная Информация</a><br/>
-                        <a className={cls.link}>О компании</a><br/>
-                         <a className={cls.link}>Мобильная Лабратория</a><br/>
-                        <a className={cls.link}>Технического Обслуживание</a><br/>
-                         <a className={cls.link}>Системы Экологического <br/> Мониторинга</a><br/>
-                        <a className={cls.link}>Инженеринг</a>
+                        <Link to="/contacts" className={cls.link}>Контактная Информация</Link><br/>
+                        <Link to="/about" className={cls.link}>О компании</Link><br/>
+                         <Link to="/moblab" className={cls.link}>Мобильная Лабратория</Link><br/>
+                        <Link to="/service" className={cls.link}>Технического Обслуживание</Link><br/>
+                         <Link to="/system" className={cls.link}>Системы Экологического <br/> Мониторинга</Link><br/>
+                        <Link to="/engineer" className={cls.link}>Инженеринг</Link>
                     </ul>
                 </div>
             </div>

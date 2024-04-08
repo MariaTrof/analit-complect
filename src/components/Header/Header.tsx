@@ -1,5 +1,7 @@
 import { FC } from "react";
 import { FiMail } from "react-icons/fi";
+import {Link } from "react-router-dom";
+
 import cls from "./Header.module.scss";
 
 const Header: FC = () => {
@@ -10,9 +12,9 @@ const Header: FC = () => {
           <div className={cls.text}>ООО "АНАЛИТ КОМПЛЕКТ"</div>
         </div>
         <div className={cls.email}>
-          <a className={cls.icon}>
+          <Link to={"/mail"} className={cls.icon}>
             <FiMail />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
