@@ -9,6 +9,7 @@ const SideBar: FC =  () => {
             <div className={cls.box}>
                 <div className={cls.list}>
                     <ul className={cls.links}>
+                        <Link to="/main" className={cls.link}>Главная</Link>
                         <Link to="/contacts" className={cls.link}>Контактная Информация</Link><br/>
                         <Link to="/about" className={cls.link}>О компании</Link><br/>
                          <Link to="/moblab" className={cls.link}>Мобильная Лабратория</Link><br/>

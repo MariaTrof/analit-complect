@@ -1,26 +1,12 @@
 @import "../../styles/global.scss";
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(21, 81, 185, 0.777);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 0 10px rgba(31, 110, 184, 0.2);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgb(8, 103, 205);
-  }
-}
+
 
 .container {
-  margin: 1px;
-  background-color: var(--color-main);
-  height: 80px;
+ // margin-bottom: 15px;
+ // height: 80px;
   border: none;
-  border-radius: var(--border-radius);
+//  border-bottom: 1px solid rgba(55, 95, 255, 0.479);
 }
 .head {
   max-width: 1600px;
@@ -28,26 +14,24 @@
   display: flex;
   justify-content: space-between;
 }
-.logotext {
-  color: var(--text-color-contract);
-  font-family: var(--font-family);
-}
-.text {
-  font-size: 38px;
-  font-weight: 300;
-  font-style: italic;
-  padding: 10px 20px;
+
+.logo {
+  padding-top: 0;
+  width: 400px;
+  height: 85px;
 }
 
 .email {
-  border-radius: 40px;
-  border: var(--text-color-contract) 2px solid;
-  padding: 10px 15px;
-  margin: 5px 0;
-  animation: pulse 2s infinite;
+  padding: 10px;
+
+
 }
 .icon {
   justify-content: center;
-  font-size: var(--font-size-l);
+  font-size: 50px;
   color: var(--text-color-contract);
+  padding: 0 10px;
+}
+.icon:hover {
+  color: rgb(4, 4, 121);
 }

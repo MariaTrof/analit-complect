@@ -3,10 +3,11 @@
 .container {
   display: flex;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 5px;
 }
 .text {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 10px;
-  font-weight: 100;
+  font-family: var(--font-family-title);
+  font-size: 4px;
+  color: var(--text-color-contract);
+  font-weight: 600;
 }

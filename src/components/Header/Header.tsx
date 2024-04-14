@@ -1,7 +1,8 @@
 import { FC } from "react";
-import { FiMail } from "react-icons/fi";
-import {Link } from "react-router-dom";
-
+import { MdAlternateEmail } from "react-icons/md";
+import { FiPhoneCall } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/LOGO-01.png";
 import cls from "./Header.module.scss";
 
 const Header: FC = () => {
@@ -9,12 +10,17 @@ const Header: FC = () => {
     <div className={cls.container}>
       <div className={cls.head}>
         <div className={cls.logotext}>
-          <div className={cls.text}>ООО "АНАЛИТ КОМПЛЕКТ"</div>
+          <div className={cls.text}>
+            <img src={Logo} className={cls.logo}></img>
+          </div>
         </div>
         <div className={cls.email}>
           <Link to={"/mail"} className={cls.icon}>
-            <FiMail />
-          </Link>
+            <MdAlternateEmail />
+          </Link> 
+        <a className={cls.icon}>
+          <FiPhoneCall />
+          </a>  
         </div>
       </div>
     </div>

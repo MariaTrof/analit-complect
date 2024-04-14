@@ -1,25 +1,16 @@
 @import "../../styles/global.scss";
 
 .container{
- margin: 10px;
-  background-color: var(--color-main);
-  border: none;
-  border-radius: var(--border-radius);
-  max-height: 600px;
+align-items: center;
+margin: 10px 220px; 
+}
+.box{
+
+    background: linear-gradient(to top, var(--text-color-contract), #000000);
+}
+.images{
+  box-shadow: 3px 15px 20px white;
+  max-height: 550px;
+  max-width: 1280px;
 }
 
-.nav{
-  max-width: 1700px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-}
-.content{
-padding: 15px 25px;
-}
-.info{
-  color: var(--text-color);
-  font-family: var(--font-family);
-   padding: 10px 20px;
-
-}
