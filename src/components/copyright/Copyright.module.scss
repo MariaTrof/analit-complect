@@ -3,11 +3,12 @@
 .container {
   display: flex;
   align-items: center;
-  margin-top: 5px;
+  //margin-top: 5px;
 }
 .text {
+  width: 180px;
   font-family: var(--font-family-title);
-  font-size: 4px;
-  color: var(--text-color-contract);
+  font-size: 10px;
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }

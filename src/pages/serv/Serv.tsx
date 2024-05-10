@@ -49,4 +49,3 @@ const Serv: FC = () => {
 };
 
 export default Serv;
-

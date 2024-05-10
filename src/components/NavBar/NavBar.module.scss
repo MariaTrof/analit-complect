@@ -1,16 +1,21 @@
 @import "../../styles/global.scss";
 
-.container{
-align-items: center;
-margin: 10px 220px; 
+.box {
+  position: relative;
+  z-index: -1;
 }
-.box{
-
-    background: linear-gradient(to top, var(--text-color-contract), #000000);
+.container {
+  border-bottom: 15px solid rgb(255, 255, 255);
 }
-.images{
-  box-shadow: 3px 15px 20px white;
-  max-height: 550px;
-  max-width: 1280px;
+.ant_component {
+  z-index: -1;
 }
-
+.carousel {
+  height: 520px;
+  width: 1500px;
+  overflow: hidden;
+}
+.images {
+  height: 520px;
+  background: linear-gradient(to right, transparent, mistyrose);
+}

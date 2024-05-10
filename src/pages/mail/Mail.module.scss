@@ -36,7 +36,6 @@
   margin: 15px;
 }
 .text {
- 
   flex: 1;
 }
 .textarea {
@@ -50,8 +49,9 @@
   height: 230px;
   margin: auto;
 }
-.textarea:hover, .inputarea:hover{
-    border-color: var(--block-color);
+.textarea:hover,
+.inputarea:hover {
+  border-color: var(--block-color);
 }
 .btn {
   padding: 5px;

@@ -1,24 +1,23 @@
 @import "../../styles/global.scss";
 
-
-.container{
-margin: 5px;
-display: flex;
+.container {
+  padding-top: 150px;
+  margin: 5px;
+  display: flex;
 }
-.title{
-    color: var(--text-color-contract);
-    font-size: var(--font-size-l);
-font-family: var(--font-family);
-font-weight: 450;
-padding: 0;
-padding-bottom: 10px;
-
+.title {
+  color: var(--text-color-contract);
+  font-size: var(--font-size-l);
+  font-family: var(--font-family);
+  font-weight: 450;
+  padding: 0;
+  padding-bottom: 10px;
 }
-.text{
-padding-top: 8px;
-color: var(--text-color-contract);
-font-size: var(--font-size-s);
-font-family: var(--font-family);
-font-weight: 200;
-padding: 15px;
+.text {
+  padding-top: 8px;
+  color: var(--text-color-contract);
+  font-size: var(--font-size-s);
+  font-family: var(--font-family);
+  font-weight: 200;
+  padding: 15px;
 }

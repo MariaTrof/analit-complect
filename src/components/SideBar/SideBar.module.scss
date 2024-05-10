@@ -1,36 +1,35 @@
 @import "../../styles/global.scss";
 
 .container {
-  padding:0 15px;
-  margin: 0 70px;
- // width: 230px;
- // background-color: rgb(236, 246, 255);
-  height: 50px;
+  z-index: 1;
+  height: 30px;
+  margin: 0;
+  align-items: center;
+  padding: 0 35px;
 }
 
 .list {
   box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 .links {
-  font-family: var(--font-family-text);
-  display: flex;
- justify-content: space-between;
 }
 .link {
-  border-top: 1px solid;
+  font-family: var(--font-link);
+  font-style: italic;
+  background-color: #8db5c0;
+  padding: 25px 8px;
+  margin: 1px;
   font-size: 16px;
-  font-weight: 500;
-  box-sizing: border-box;
-  color: rgb(10, 10, 217);
- // border-left: 1px solid rgb(45, 1, 140);
-  padding: 10px 0;
-  margin: 3px;
-justify-content: space-between;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+  border: none;
 }
 .link:hover {
-  color: rgb(4, 4, 121);
+  color: white;
   cursor: grab;
-
-
+  background-color: var(--block-color);
 }

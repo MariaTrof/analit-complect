@@ -1,6 +1,8 @@
 :root {
-  --font-family-title: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  --font-family-text:  "Raleway", sans-serif;
+  --font-family-title: "Bellota Text", sans-serif;
+  --font-family-text: "Montserrat", sans-serif;
+  --font-block: "Oswald", sans-serif;
+  --font-link: "Comfortaa", sans-serif;
   --font-size-xl: 48px;
   --font-size-l: 32px;
   --font-size-m: 24px;
@@ -9,8 +11,8 @@
   --color-main: rgba(233, 240, 242, 0.911);
   --color-blank: rgb(207, 248, 252);
   --text-color-main: rgb(13, 12, 12);
-  --text-color-contract: rgb(10, 85, 183);
-  --block-color: rgb(0, 166, 255);
+  --text-color-contract: #6399f5;
+  --block-color: #6399f5;
   --border-radius: 30px;
   --blank-border: none;
   --border: 2px solid;
@@ -20,9 +22,5 @@
   --font-weight-medium: 500;
   --font-weight-small: 100;
 
-  --background-gradient: linear-gradient(
-    90deg,
-    rgba(80, 223, 252, 1) 0%,
-    rgb(161, 255, 231)
-  );
+  --background-gradient: linear-gradient(90deg, #699aec 0%, rgb(161, 255, 231));
 }
