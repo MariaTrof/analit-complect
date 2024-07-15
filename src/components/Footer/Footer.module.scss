@@ -1,37 +1,106 @@
-.container{
-    margin: 0;
-padding: 0 160px;
-align-items: center;
-align-content: center;
-box-sizing: border-box;
-justify-content: space-between;
-color: rgb(255, 255, 255);
-background:  #6399f5;
-font-size: 15px;
-font-weight: 400;
-   // width: 100%;
-    height: 170px;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background: rgb(6, 90, 166);
+
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px;
+
+  width: 100%;
+  height: 25%;
+}
+.small_text {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.foo {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.left {
+  margin: 10px 20px;
+  height: 70px;
+}
+.text {
+  font-weight: 800;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: overline;
+}
+.right {
+  margin: 10px 20px;
+  height: 70px;
 }
 
-.box{
-max-width: 1000px;
-display: flex;
-padding: 20px;
+@media (max-width: 1100px) {
+  .container {
+    padding: 30px;
+    height: 55%;
 
-}
-.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin: 15px;
+  }
+  .foo {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    padding-top: 20px;
+    margin: 5px;
 
-padding: 10px;
-margin: 10px 20px;
-}
-.text{
-    font-weight: 800;
-    font-size: 18px;
-   text-decoration:overline;
-}
-.right{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+  }
+  .text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .right {
+    padding-top: 20px;
 
-width: 200px;
-padding: 10px;
-margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .small_text {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+  }
 }

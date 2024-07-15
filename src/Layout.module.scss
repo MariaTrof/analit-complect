@@ -1,18 +1,7 @@
-.container {
-  margin: 0;
-}
-.app {
-}
-.header {
-  height: 100px;
-}
-.side {
-  padding-top: 15px;
-  position: sticky;
-}
 .foot {
-  padding-top: 0;
-  max-width: 100%;
   color: white;
   font-family: var(--font-family-text);
+}
+.container {
+  height: 100vh;
 }

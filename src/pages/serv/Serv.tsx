@@ -1,50 +1,54 @@
 import { FC } from "react";
 import cls from "./Serv.module.scss";
+import Top from "../../assets/photo_2024.jpg";
+//import SecPic from "../../assets/scale_1200.png";
 
 const Serv: FC = () => {
   return (
-    <div className={cls.container}>
-      <div className={cls.title}>Техническое обслуживание</div>
-      <div className-={cls.content}>
-        <div className={cls.text}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          maximus tincidunt facilisis. Orci varius natoque penatibus et magnis
-          dis parturient montes, nascetur ridiculus mus. Vivamus diam tellus,
-          luctus a sapien vitae, elementum mollis dui. Etiam maximus ante eu
-          ligula placerat, nec suscipit ex viverra. Nulla lorem magna, lacinia
-          molestie rhoncus in, placerat ut sem. Aliquam ut purus nisl. Mauris eu
-          tortor nec nisi dapibus mattis. Cras vitae vehicula tellus, fermentum
-          ultricies diam. Vivamus sit amet lorem vel turpis scelerisque
-          malesuada non sit amet sem. Aliquam in efficitur libero. Fusce vitae
-          urna vitae ex sollicitudin semper ac at ante. Sed ut ligula tempus,
-          hendrerit massa at, varius orci. Fusce eros dolor, aliquet non
-          tristique et, euismod ac orci. Pellentesque vulputate ante vitae enim
-          sagittis, nec mollis erat sagittis. Vestibulum cursus, nibh sed
-          pretium fermentum, libero arcu scelerisque orci, sed facilisis nunc
-          neque vel tortor. Morbi sed ligula ullamcorper, auctor urna auctor,
-          lacinia erat. Pellentesque et mauris vel risus volutpat ultricies at
-          et orci. Morbi semper magna ac lobortis luctus. Aliquam venenatis
-          condimentum tincidunt. Phasellus nibh massa, pellentesque a felis
-          quis, vestibulum imperdiet nisi. Cras sollicitudin odio sed elit
-          pretium molestie. Donec dapibus mattis massa ac vulputate. Morbi sed
-          magna eu ligula lacinia aliquam nec et purus. Donec orci lorem,
-          rhoncus sed sem in, vulputate tempor lorem. Duis sit amet imperdiet
-          eros. Mauris tincidunt vehicula mollis. Praesent consectetur id mauris
-          id maximus. Interdum et malesuada fames ac ante ipsum primis in
-          faucibus. Suspendisse nec orci viverra, mattis lacus non, rutrum
-          libero. Ut sed congue massa, nec auctor mauris. Nam blandit tellus in
-          vulputate ullamcorper. In rutrum metus magna, eget condimentum orci
-          placerat vitae. Quisque nec ante id massa pretium dapibus. Nam vitae
-          mi nec tellus vulputate lobortis pellentesque vitae lorem. Integer a
-          nisl eu lorem egestas tempus vitae eget arcu. Nulla porta lectus at
-          sapien luctus, id consequat ipsum ultricies. Vivamus mattis faucibus
-          vestibulum. Donec lobortis lacinia magna, vitae lobortis magna mollis
-          in. Vivamus nunc lacus, venenatis vitae arcu et, iaculis congue ipsum.
-          Donec vel euismod lorem, sit amet scelerisque velit. Aenean diam
-          turpis, ultricies at eros nec, suscipit scelerisque magna.
+    <>
+      <div className={cls.container}>
+        <div className={cls.head}>
+          <div className={cls.title}>Техническое обслуживание</div>
+        </div>
+        <div className={cls.content}>
+          <div className={cls.box}>
+            <div className={cls.pic}>
+              <img src={Top} className={cls.img_left} />
+            </div>
+            <br />
+            <div className={cls.text}>
+              Сервисное обслуживание – это совокупность видов деятельности,
+              которая позволяет клиентам рационально и полноценно
+              эксплуатировать приобретённый товар или услугу. Задача сервисного
+              обслуживания — обеспечить бесперебойную работу инфраструктуры или
+              программного обеспечения заказчика. В современном мире
+              своевременное техническое обслуживание позволяет не только снизить
+              вероятность неожиданных поломок, повысить отказоустойчивость и
+              обеспечить более долгий срок эксплуатации оборудования, но и
+              позволяет улучшать экономические показатели производства.
+              <br />
+              Например, минимизировать затраты на ремонт и снизить вероятность
+              покупки нового оборудования, вести бизнес в бесперебойном режиме и
+              сокращать потенциальные расходы. Наша компания предлагает все виды
+              технического обслуживания (разовое, периодическое, годовое) и
+              ремонта газоаналитического оборудования, основанного на различных
+              физических принципах. У нас работают лучшие сервисные инженеры и
+              имеется весь спектр необходимого оборудования для проведения
+              ремонта и технического обслуживания, начиная от паяльных станций и
+              осциллографов, заканчивая оборудованием для калибровки поверочными
+              газовыми смесями, необходимыми баллонами с ПГС, редукторами,
+              различными манометрами/вакууметрами и т.д. За время работы
+              компании накоплена значительная база знаний по устранению
+              неисправностей и замещению некоторых зарубежных компонентов. За
+              консультацией непосредственно по вашим вопросам обращайтесь по
+              телефону или через форму обратной связи на сайте.
+            </div>
+
+            <br />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

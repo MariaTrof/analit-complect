@@ -3,19 +3,21 @@
 .box {
   position: relative;
   z-index: -1;
+  justify-content: center;
+  align-items: center;
 }
-.container {
-  border-bottom: 15px solid rgb(255, 255, 255);
-}
+
 .ant_component {
   z-index: -1;
 }
 .carousel {
-  height: 520px;
-  width: 1500px;
+  padding: 0;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   overflow: hidden;
 }
 .images {
-  height: 520px;
-  background: linear-gradient(to right, transparent, mistyrose);
+  height: 75vh;
 }

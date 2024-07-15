@@ -1,53 +1,48 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Phone from "../../assets/85d5c474-8de7-487e-99a6-7dc10e07fa9b_pixelied-one-tree-hill.svg";
-import Email from "../../assets/f46636d7-a94b-421c-aa61-8f52a6443f5b_pixelied-i-love-lucy.svg";
+import Email from "../../assets/email-64.png";
 import Logo from "../../assets/LOGO-01.png";
 import cls from "./Header.module.scss";
 
 const Header: FC = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 1208);
+  };
   return (
-    <div className={cls.container}>
-      <div className={cls.head}>
+    <div className={cls.box}>
+      <div className={cls.container}>
         <div className={cls.logotext}>
-          <Link to="/main">
+          <Link to="/">
             <img src={Logo} className={cls.logo} />
           </Link>
-
-          <div className={cls.text}>
+        </div>
+        {isMobile ? null : (
+          <div className={cls.contact}>
             <div className={cls.list}>
               <ul className={cls.links}>
                 <Link to="/about" className={cls.link}>
                   О Компании
                 </Link>
-                <Link to="/about" className={cls.link}>
+                <Link to="/news" className={cls.link}>
                   Новости
                 </Link>
                 <Link to="/contacts" className={cls.link}>
                   Контакты
                 </Link>
-
-                <Link to="/service" className={cls.link}>
-                  Технического Обслуживание
-                </Link>
-                <Link to="/engineer" className={cls.link}>
-                  Инженеринг
-                </Link>
-                <br />
-                <Link to="/moblab" className={cls.link}>
-                  Мобильные Лабратории
-                </Link>
-                <Link to="/system" className={cls.link}>
-                  Системы Экологического Мониторинга
-                </Link>
               </ul>
+              <Link to="/mail">
+                <img src={Email} className={cls.img} />
+              </Link>
             </div>
           </div>
-          <div className={cls.contact}>
-            <img src={Phone} className={cls.img}></img>
-            <img src={Email} className={cls.img}></img>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );

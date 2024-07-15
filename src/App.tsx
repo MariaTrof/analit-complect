@@ -9,15 +9,17 @@ import System from "./pages/system/System";
 import Serv from "./pages/serv/Serv";
 import Moblab from "./pages/moblab/Moblab";
 import About from "./pages/about/About";
+import News from "./pages/news/News";
 
 function App() {
   return (
     <div className={cls.container}>
       <Layout>
         <Routes>
-          <Route element={<NavBar />} path="/main" />
+          <Route element={<NavBar />} path="/" />
           <Route element={<Contacts />} path="/contacts" />
           <Route element={<Mail />} path="/mail" />
+          <Route element={<News />} path="/news" />
           <Route element={<About />} path="/about" />
           <Route element={<Moblab />} path="/moblab" />
           <Route element={<Serv />} path="/service" />
